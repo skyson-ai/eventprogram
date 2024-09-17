@@ -7,7 +7,7 @@ const AProposSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="max-w-full lg:max-w-6xl mx-auto px-4 md:px-8 mb-12 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-6">
           Notre Vision pour <strong className='text-yellow-500 font-extrabold'>'1000 Femmes Propriétaires'</strong>
         </h2>
         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
@@ -35,7 +35,6 @@ const AProposSection: React.FC = () => {
             </a>
           </div>
         </div>
-
         <div className="md:w-1/2 flex justify-center">
           <Image
             src="/IMG3.jpg"
