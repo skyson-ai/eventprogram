@@ -5,3 +5,23 @@
 
 
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.capitalize-first-letter {
+  text-transform: lowercase;
+}
+
+.capitalize-first-letter::first-letter {
+  text-transform: uppercase;
+}
