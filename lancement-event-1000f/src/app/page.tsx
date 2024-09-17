@@ -2,6 +2,8 @@ import HeaderSection from "./components/HeaderSection";
 import IntroSection from "./components/IntroSection";
 
 import PartenairesSection from "./components/Partners";
+import PourquoiParticiper from "./components/PourquoiParticiper";
+import Testimonials from "./components/Temoignagne";
 
 export default function Home() {
 
@@ -14,10 +16,11 @@ export default function Home() {
         description="Découvre Comment Devenir Propriétaire et Bâtir un Patrimoine Durable"
         buttonText="Inscris-toi Maintenant"
         backgroundImageUrl="/1000femme.jpg"
-
-      />
+       />
       <IntroSection/>
       <PartenairesSection/>
+      <PourquoiParticiper/>
+      <Testimonials/>
       
     </>
   );

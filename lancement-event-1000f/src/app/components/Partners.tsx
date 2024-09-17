@@ -8,11 +8,9 @@ import { Slide } from 'react-awesome-reveal';
 import '../globals.css'
 
 
-
 const Partenaires: React.FC = () => {
   const [emblaRef1, emblaApi1] = useEmblaCarousel({ loop: true });
   const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const autoPlayInterval = useRef<NodeJS.Timeout | null>(null);
   const totalSlides = logos.length;
@@ -35,7 +33,6 @@ const Partenaires: React.FC = () => {
 
   const onSelect = useCallback(() => {
     if (!emblaApi1 || !emblaApi2) return;
-    setSelectedIndex(emblaApi1.selectedScrollSnap());
     emblaApi2.scrollTo((totalSlides - 1) - emblaApi1.selectedScrollSnap());
   }, [emblaApi1, emblaApi2, totalSlides]);
 
@@ -60,7 +57,7 @@ const Partenaires: React.FC = () => {
       <Slide direction="down">
       <div className="flex items-center justify-center mb-8">
         <div className="w-1/4 h-[2px] bg-yellow-500"></div>
-        <h2 className="text-3xl font-bold text-center text-black mx-4">
+        <h2 className="text-3xl text-center mx-4 font-semibold text-gray-800">
           Nos Partenaires
         </h2>
         <div className="w-1/4 h-[2px] bg-yellow-500"></div>
