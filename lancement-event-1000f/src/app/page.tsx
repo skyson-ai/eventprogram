@@ -19,13 +19,13 @@ export default function Home() {
           backgroundImageUrl="/1000femme.jpg"
         />
       <IntroSection/>
-      <PartenairesSection/>
+      <EventProgram />
       <AProposSection />
       <Testimonials/>
       <PourquoiParticiper/>
       <InscriptionSection/>
+      <PartenairesSection/>
       <FAQSection/>
-      <EventProgram />
     </>
   );
 }

@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Testimonials = () => {
   return (
     <div className="mx-auto text-center md:max-w-xl lg:max-w-6xl py-12 px-4">
-      <h3 className="mb-8 text-4xl font-bold text-gray-900">
+      <h3 className="mb-8 text-4xl md:text-3xl font-bold text-gray-800">
         Nos Témoignages
       </h3>
       <p className="mb-10 text-lg text-gray-700">

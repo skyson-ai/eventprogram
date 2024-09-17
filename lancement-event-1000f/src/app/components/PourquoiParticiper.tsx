@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'; 
 import Link from 'next/link';
 import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
@@ -14,10 +14,10 @@ const BenefitsSection = () => {
           <Image
             src="/real-estate.jpg"
             alt="Infographie des avantages de la propriété immobilière"
-            width={800}
-            height={400}
+            width={300}
+            height={300}
             layout="responsive"
-            className="mx-auto w-full md:w-3/4 lg:w-1/2"
+            className="mx-auto w-full md:w-2/3 lg:w-1/3"
           />
         </div>
         <ul className="text-left list-disc list-inside text-gray-700 max-w-2xl mx-auto space-y-4 text-lg md:text-xl">
@@ -44,7 +44,7 @@ const BenefitsSection = () => {
           href="#register"
           className="inline-block bg-yellow-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105 mt-8"
         >
-         Participe et booste ton avenir
+          Participe et booste ton avenir
         </Link>
       </div>
     </section>
