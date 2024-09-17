@@ -2,8 +2,7 @@ import HeaderSection from "./components/HeaderSection";
 import IntroSection from "./components/IntroSection";
 import CountDown from "./components/CoundDown";
 import { isDateInPast } from "@/utils/getDate";
-
-
+import PartenairesSection from "./components/Partners";
 
 export default function Home() {
   const countdownDate = new Date('2024-10-19T23:18:07')
@@ -26,6 +25,8 @@ export default function Home() {
 
       />
       <IntroSection/>
+      <PartenairesSection/>
+      
     </>
   );
 }

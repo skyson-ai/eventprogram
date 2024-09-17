@@ -6,7 +6,7 @@ const Header: React.FC = () => {
         <header className="flex justify-between items-center p-4 bg-white shadow-md">
             <div className="flex items-center">
                 <Image 
-                    src="/path/to/logo.png" 
+                    src="/uriel.jpeg" 
                     alt="Logo" 
                     width={40} 
                     height={40} 
