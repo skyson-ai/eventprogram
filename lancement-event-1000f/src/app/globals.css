@@ -5,3 +5,102 @@
 
 
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.capitalize-first-letter {
+  text-transform: lowercase;
+}
+
+.capitalize-first-letter::first-letter {
+  text-transform: uppercase;
+}
+
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 12.5%; /* 100% / 3 = 33.3333% */
+  box-sizing: border-box;
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__slide_min_device {
+  position: relative;
+  min-width: 20%; /* 100% / 3 = 33.3333% */
+  box-sizing: border-box;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.embla__slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__dot {
+  background: #bfbfbf;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+
+.item-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}

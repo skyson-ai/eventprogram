@@ -4,9 +4,10 @@ import PartenairesSection from "./components/Partners"
 import AProposSection from "./components/AboutInitiator"
 
 export default function Home() {
+
   return (
     <>
-      <HeaderSection/> 
+      <HeaderSection title={""} date={""} description={""} buttonText={""} backgroundImageUrl={""}/>
       <PartenairesSection/>
       <AProposSection />
       <IntroSection/>
