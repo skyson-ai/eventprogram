@@ -5,7 +5,7 @@ const AProposSection: React.FC = () => {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-full lg:max-w-6xl mx-auto px-4 md:px-8 mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center">
+        <h2 className="text-xl md:text-3xl font-bold text-black mb-6 text-center">
           Notre Vision pour &#39;1000 Femmes Propriétaires&#39;
         </h2>
         <p className="text-base md:text-lg text-gray-700 leading-relaxed text-center">
