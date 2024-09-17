@@ -5,7 +5,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const BenefitsSection = () => {
   return (
-    <section className="py-12 bg-gradient-to-r from-white via-gray-100 to-white text-center">
+    <section className="py-12 bg-yellow-100 text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 capitalize-first-letter">
           Les Bénéfices d&apos;un Bien Immobilier pour Ton Futur
