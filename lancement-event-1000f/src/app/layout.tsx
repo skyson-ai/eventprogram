@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import CountDown from "./components/CoundDown";
-import { isDateInPast } from "@/utils/getDate";
 
 
 const inter = DM_Sans({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -18,19 +16,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const countdownDate = new Date('2024-10-19T23:18:07')
 
   return (
     <html lang="fr"> 
       <body className={inter.className}>
       <Header />
-      {
-        !isDateInPast(countdownDate) &&
-        <CountDown
-          deadline={countdownDate}
-          title={'Place limitée , Réservez vite vos places !'}
-        />
-      }
         {children}
       </body>
     </html>

@@ -42,10 +42,10 @@ const Header: React.FC = () => {
                 <Link href="/" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Accueil
                 </Link>
-                <Link href="/events" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="/1000-femmes-proprietaires" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Événements
                 </Link>
-                <Link href="/contact" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="/contacter-la-coach" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Contact
                 </Link>
             </nav>
