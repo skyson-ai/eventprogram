@@ -12,7 +12,7 @@ const AProposSection: React.FC = () => {
           Notre Vision pour <strong className='text-yellow-500 font-extrabold'>1000 Femmes Propriétaires</strong>
         </h2>
         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-          Nous croyons qu'un accès accru à la propriété immobilière est un levier puissant pour l'indépendance financière et l'égalité des genres. Inspirées par l'histoire de Mireille Le Bouler, nous visons à créer une communauté de 1000 femmes propriétaires, capables de mentorat et d'inspiration pour d'autres femmes.
+          Nous croyons qu&apos;un accès accru à la propriété immobilière est un levier puissant pour l'indépendance financière et l'égalité des genres. Inspirées par l'histoire de Mireille Le Bouler, nous visons à créer une communauté de 1000 femmes propriétaires, capables de mentorat et d'inspiration pour d'autres femmes.
         </p>
       </div>
       <div className="max-w-full lg:max-w-6xl mx-auto px-4 md:px-8 flex flex-col-reverse md:flex-row-reverse items-center">
