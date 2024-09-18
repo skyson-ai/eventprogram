@@ -39,7 +39,7 @@ const FAQSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="max-w-full lg:max-w-4xl mx-auto px-4 md:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">Questions Fréquemment Posées</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">Questions <strong className='text-yellow-500'>Fréquemment Posées</strong></h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
