@@ -16,6 +16,7 @@ export default function Home() {
           date="Le 13 Octobre 2024 à Paris"
           description="Découvre Comment Devenir Propriétaire et Bâtir un Patrimoine Durable"
           buttonText="Inscris-toi Maintenant"
+          buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link" // Ajoute le lien ici
           backgroundImageUrl="/1000femme.jpg"
         />
       <IntroSection/>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 interface CountdownTimerProps {
     deadline: Date;
@@ -19,17 +19,8 @@ const INITIAL_TIME_LEFT = { days: 0, hrs: 0, mins: 0, secs: 0 };
 function CountdownTimer({ deadline, title }: CountdownTimerProps) {
     const [timeLeft, setTimeLeft] = useState<CountdownTimeLeft>(INITIAL_TIME_LEFT);
 
-    useEffect(() => {
-        setTimeLeft(calculateTimeLeft());
-
-        const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
-
-        return () => clearInterval(timer);
-    }, []);
-
-    function calculateTimeLeft(): CountdownTimeLeft {
+    // Utilisation de useCallback pour calculer le temps restant
+    const calculateTimeLeft = useCallback((): CountdownTimeLeft => {
         let timeLeft: CountdownTimeLeft = {};
         const currentDate = new Date();
         const difference = deadline.getTime() - currentDate.getTime();
@@ -44,7 +35,17 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         }
 
         return timeLeft;
-    }
+    }, [deadline]); // Ajout de deadline comme dépendance
+
+    useEffect(() => {
+        setTimeLeft(calculateTimeLeft());
+
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [calculateTimeLeft]); // Ajout de calculateTimeLeft comme dépendance
 
     function getLabel(unit: string): string {
         switch (unit) {
