@@ -15,7 +15,6 @@ export default function HeaderSection({
   date,
   description,
   buttonText,
-  buttonLink, // Utilisation du lien du bouton
   backgroundImageUrl,
 }: HeaderSectionProps) {
   return (
