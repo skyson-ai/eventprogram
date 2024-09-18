@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 const Testimonials = () => {
   return (
-    <div className="mx-auto text-center md:max-w-xl lg:max-w-6xl py-12 px-4">
+    <div className="mx-auto text-center md:max-w-xl lg:max-w-6xl py-12 px-4 bg-gray-400">
       <h3 className="mb-8 text-4xl md:text-3xl font-bold text-gray-800">
-        Nos Témoignages
+        Nos  <strong className='text-yellow-500 font-extrabold'>Témoignages</strong>
       </h3>
-      <p className="mb-10 text-lg text-gray-700">
+      <p className="mb-10 text-lg text-gray-900">
         Découvrez pourquoi elles nous ont rejointes
       </p>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">

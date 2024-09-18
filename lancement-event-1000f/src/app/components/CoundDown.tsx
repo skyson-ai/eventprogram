@@ -62,15 +62,15 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
     }
 
     return (
-        <div className="bg-yellow-100 p-6 rounded-lg shadow-lg text-center">
+        <div className="bg-yellow-100 p-2 rounded-lg shadow-lg text-center">
             <h2 className="text-xl md:text-2xl font-semibold text-yellow-700 mb-4">{title}</h2>
             <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
                 {Object.entries(timeLeft).map(([unit, value], index, array) => (
-                    <div key={unit} className="flex flex-col items-center bg-yellow-200 p-2 md:p-4 rounded-lg shadow-inner min-w-[60px] md:min-w-[100px]">
+                    <div key={unit} className="flex flex-col items-center bg-yellow-200 p-2 md:p-4 rounded-lg shadow-inner">
                         <div className="flex">
                             <div className="bg-yellow-300 flex rounded-lg shadow-inner mx-1">
-                                <p className="text-2xl md:text-4xl font-bold text-yellow-800">{Math.floor(value / 10)}</p>
-                                <p className="text-2xl md:text-4xl font-bold text-yellow-800">{value % 10}</p>
+                                <p className="text-2xl md:text-2xl font-bold text-yellow-800">{Math.floor(value / 10)}</p>
+                                <p className="text-2xl md:text-2xl font-bold text-yellow-800">{value % 10}</p>
                             </div>
                             {index !== array.length - 1 && <span className="text-xl md:text-3xl font-bold text-yellow-700 mx-1 md:mx-2">:</span>}
                         </div>

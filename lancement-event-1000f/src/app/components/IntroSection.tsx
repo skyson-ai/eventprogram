@@ -4,10 +4,10 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const IntroSection = () => {
   return (
-    <section className="py-12 bg-gradient-to-r from-white via-gray-200 to-white text-center">
+    <section className="py-12 bg-gradient-to-r from-white via-gray-100 to-white text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 animate-fadeIn">
-          Pourquoi Participer à 1000 Femmes Propriétaires ?
+        <strong className='text-yellow-500 font-extrabold'>Pourquoi Participer </strong>à 1000 Femmes Propriétaires ?
         </h2>
         <p className="text-lg text-gray-800 mb-8 max-w-2xl mx-auto animate-fadeIn">
           Tu rêves de posséder un bien immobilier mais ne sais pas par où commencer ? Rejoins-nous le 13 octobre à Paris pour 1000 Femmes Propriétaires. Cet événement est conçu pour te fournir les outils et le soutien nécessaires pour transformer ton avenir financier.

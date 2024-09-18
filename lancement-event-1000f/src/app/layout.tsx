@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "./components/Header";
 import CountDown from "./components/CoundDown";
 import { isDateInPast } from "@/utils/getDate";
-import Footer from "./components/Footer";
 
 
 const inter = DM_Sans({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -33,7 +32,6 @@ export default function RootLayout({
         />
       }
         {children}
-        <Footer />
       </body>
     </html>
   );

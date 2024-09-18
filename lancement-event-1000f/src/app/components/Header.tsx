@@ -1,7 +1,6 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Header: React.FC = () => {
@@ -17,16 +16,16 @@ const Header: React.FC = () => {
 
     return (
         <header className="flex flex-wrap justify-between items-center p-4 bg-white shadow-md">
-            <div className="flex items-center">
-                <Image 
-                    src="/uriel.jpeg" 
-                    alt="Logo" 
-                    width={70} 
-                    height={70} 
-                />
+            <div className="flex items-center mx-4">
+                <Link href="/" onClick={closeMenu}>
+                    <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 hover:text-yellow-600 transition-colors duration-300">
+                        <span className="text-yellow-500">Mireille</span> <span className="text-gray-700">Le Bouler</span>
+                    </h1>
+                </Link>
             </div>
+
             <button
-                className="block md:hidden text-gray-600 hover:text-gold-yellow focus:outline-none"
+                className="block md:hidden text-gray-600 hover:text-yellow-500 focus:outline-none"
                 onClick={toggleMenu}
             >
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -37,21 +36,17 @@ const Header: React.FC = () => {
                     )}
                 </svg>
             </button>
+
+            {/* Navigation Menu */}
             <nav className={`my-4 text-2xl flex flex-col md:flex-row md:items-center w-full md:w-auto ${isOpen ? 'block' : 'hidden'} md:block`}>
-                <Link href="/" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="/" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Accueil
                 </Link>
-                <Link href="/about" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
-                    À Propos
-                </Link>
-                <Link href="/events" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="/events" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Événements
                 </Link>
-                <Link href="/contact" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="/contact" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Contact
-                </Link>
-                <Link href="/register" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
-                    Inscription
                 </Link>
             </nav>
         </header>
