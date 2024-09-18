@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                 <Link href="/contact" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Contact
                 </Link>
-                <Link href="/register" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link" className="text-gray-600 hover:text-gold-yellow text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Inscription
                 </Link>
             </nav>

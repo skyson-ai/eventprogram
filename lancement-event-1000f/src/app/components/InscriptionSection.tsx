@@ -4,6 +4,7 @@ import React from 'react';
 import CountdownTimer from './CoundDown';
 import { isDateInPast } from '@/utils/getDate';
 import { FaUser, FaEnvelope, FaPhone } from 'react-icons/fa';
+import Link from 'next/link';
 
 const InscriptionSection = () => {
   const countdownDate = new Date('2024-10-19T23:18:07');
@@ -62,12 +63,14 @@ const InscriptionSection = () => {
               />
             </div>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 text-white font-semibold py-3 px-6 rounded-full text-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Je profite de l&apos;offre 
-          </button>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link" >
+            <button
+              type="button"
+              className="w-full bg-yellow-500 text-white font-semibold py-3 px-6 rounded-full text-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Je profite de l&apos;offre
+            </button>
+          </Link>
         </form>
       </div>
     </section>

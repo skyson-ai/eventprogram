@@ -43,7 +43,7 @@ const IntroSection = () => {
           </div>
         </div>
         <Link
-          href="#register"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link"
           className="inline-block bg-yellow-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeIn"
         >
           Réserve ta place dès maintenant

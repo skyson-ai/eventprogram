@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const EventProgram: React.FC = () => {
   return (
@@ -37,26 +38,27 @@ const ProgramItem: React.FC<{ title: string; description: string }> = ({ title, 
   </div>
 );
 
-const CTAButton: React.FC<{ text: string }> = ({ text }) => (
+const CTAButton: React.FC<{ text: string; link: string }> = ({ text, link }) => (
   <div className="flex justify-center mt-10">
-    <a
-      href="#"
-      className="inline-block bg-yellow-500 text-white font-semibold py-4 px-10 rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg transition-transform transform hover:scale-105 duration-300"
-    >
-      {text}
-    </a>
+    <Link href={link} legacyBehavior>
+      <a
+        className="inline-block bg-yellow-500 text-white font-semibold py-4 px-10 rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg transition-transform transform hover:scale-105 duration-300"
+      >
+        {text}
+      </a>
+    </Link>
   </div>
 );
 
 const ExpertsSection: React.FC = () => (
   <div className="mt-16">
     <SectionTitle title="Rencontre Nos Experts et Intervenants" />
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  py-12 px-4 rounded-lg">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 px-4 rounded-lg">
       <ExpertCard name="Mireille Le Bouler" description="Experte en investissement immobilier." imageUrl="/mireille.jpg" />
       <ExpertCard name="Jean Dupont" description="Spécialiste en financement immobilier." imageUrl="/mireille.jpg" />
       <ExpertCard name="Sophie Martin" description="Coach en développement personnel." imageUrl="/mireille.jpg" />
     </div>
-    <CTAButton text="Je réserve ma place" />
+    <CTAButton text="Je réserve ma place" link="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link"  />
   </div>
 );
 
