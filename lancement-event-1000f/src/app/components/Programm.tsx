@@ -54,9 +54,9 @@ const ExpertsSection: React.FC = () => (
   <div className="mt-16">
     <SectionTitle title="Rencontre Nos Experts et Intervenants" />
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 px-4 rounded-lg">
-      <ExpertCard name="Mireille Le Bouler" description="Experte en investissement immobilier." imageUrl="/mireille.jpg" />
-      <ExpertCard name="Jean Dupont" description="Spécialiste en financement immobilier." imageUrl="/mireille.jpg" />
-      <ExpertCard name="Sophie Martin" description="Coach en développement personnel." imageUrl="/mireille.jpg" />
+      <ExpertCard name="Mireille Le Bouler" description="Experte en investissement immobilier." imageUrl="/Mireille.jpg" />
+      <ExpertCard name="Jean Dupont" description="Spécialiste en financement immobilier." imageUrl="/Mireille.jpg" />
+      <ExpertCard name="Sophie Martin" description="Coach en développement personnel." imageUrl="/Mireille.jpg" />
     </div>
     <CTAButton text="Je réserve ma place" link="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link"  />
   </div>
