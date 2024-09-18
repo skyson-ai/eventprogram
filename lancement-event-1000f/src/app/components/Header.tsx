@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <header className="flex flex-wrap justify-between items-center p-4 bg-white shadow-md">
             <div className="flex items-center mx-4">
                 <Link href="/" onClick={closeMenu}>
-                    <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 hover:text-yellow-600 transition-colors duration-300">
+                    <h1 className="text-xl md:text-3xl font-extrabold tracking-tight text-gray-900 hover:text-yellow-600 transition-colors duration-300">
                         <span className="text-yellow-500">Mireille</span> <span className="text-gray-700">Le Bouler</span>
                     </h1>
                 </Link>

@@ -3,10 +3,9 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useCallback, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import logos from '@/data/logoPartenaires'
+import logos from '@/data/logoPartenaires';
 import { Slide } from 'react-awesome-reveal';
-import '../globals.css'
-
+import '../globals.css';
 
 const Partenaires: React.FC = () => {
   const [emblaRef1, emblaApi1] = useEmblaCarousel({ loop: true });
@@ -14,6 +13,12 @@ const Partenaires: React.FC = () => {
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const autoPlayInterval = useRef<NodeJS.Timeout | null>(null);
   const totalSlides = logos.length;
+
+  const stopAutoPlay = useCallback(() => {
+    if (autoPlayInterval.current) {
+      clearInterval(autoPlayInterval.current);
+    }
+  }, []);
 
   const startAutoPlay = useCallback(() => {
     stopAutoPlay();
@@ -23,13 +28,7 @@ const Partenaires: React.FC = () => {
         emblaApi2.scrollPrev();
       }
     }, 2000);
-  }, [emblaApi1, emblaApi2]);
-
-  const stopAutoPlay = useCallback(() => {
-    if (autoPlayInterval.current) {
-      clearInterval(autoPlayInterval.current);
-    }
-  }, []);
+  }, [emblaApi1, emblaApi2, stopAutoPlay]); // stopAutoPlay est maintenant utilisé après sa déclaration
 
   const onSelect = useCallback(() => {
     if (!emblaApi1 || !emblaApi2) return;
@@ -55,19 +54,19 @@ const Partenaires: React.FC = () => {
   return (
     <div className='flex flex-col items-center py-12 bg-yellow-100' id='partenaire'>
       <Slide direction="down">
-      <div className="flex items-center justify-center mb-8">
-        <div className="w-1/4 h-[2px] bg-yellow-500"></div>
-        <h2 className="text-3xl text-center mx-4 font-semibold text-gray-800">
-          Nos Partenaires
-        </h2>
-        <div className="w-1/4 h-[2px] bg-yellow-500"></div>
-      </div>
+        <div className="flex items-center justify-center mb-8">
+          <div className="w-1/4 h-[2px] bg-yellow-500"></div>
+          <h2 className="text-3xl text-center mx-4 font-semibold text-gray-800">
+            Nos Partenaires
+          </h2>
+          <div className="w-1/4 h-[2px] bg-yellow-500"></div>
+        </div>
       </Slide>
       <div className='embla w-full max-w-screen-lg'>
         <div className='embla__viewport' ref={emblaRef1}>
           <div className='embla__container'>
             {logosFirstHalf.map((logo, index) => (
-              <div key={index} className='embla__slide_min_device flex justify-center items-center sm:min-w-[12%]  mr-1 sm:mr-2 xl:min-w-[9%]'>
+              <div key={index} className='embla__slide_min_device flex justify-center items-center sm:min-w-[12%] mr-1 sm:mr-2 xl:min-w-[9%]'>
                 <div className='p-4 bg-white rounded-lg shadow-md'>
                   <Image src={logo.src} alt={logo.alt} width={100} height={100} quality={100} />
                 </div>
