@@ -37,7 +37,6 @@ const InscriptionSection = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <GoogleFormEmbed/>
-         
           </div>
         </div>
       </div>
