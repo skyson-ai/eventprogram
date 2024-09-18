@@ -11,9 +11,18 @@ const GoogleFormEmbed = () => {
         </p>
 
         {/* Google Forms iframe */}
-        <div className="w-full h-96 md:h-[600px]">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc44kPYD4zEa5vBIvVwuNax5hmOtCjTuYBe10vNXTI9wRNXnw/viewform?embedded=true" width="640" height="684" 
-        frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+        <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', position: 'relative' }}>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc44kPYD4zEa5vBIvVwuNax5hmOtCjTuYBe10vNXTI9wRNXnw/viewform?embedded=true"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Google Forms"
+            allowFullScreen
+          >
+            Chargement…
+          </iframe>
         </div>
       </div>
     </section>
