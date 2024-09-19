@@ -12,7 +12,7 @@ const CeQuiLaDifferencieDesAutres = () => {
           <div className="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
             <p className="text-lg text-gray-700 leading-relaxed">
               Meilleure dans son domaine, Mireille Le Bouler offre une expertise unique en immobilier, 
-              alliant passion et professionnalisme pour accompagner ses clients dans leurs projets d'investissement.
+              alliant passion et professionnalisme pour accompagner ses clients dans leurs projets d&apos;investissement.
             </p>
           </div>
           <div className="bg-yellow-50 p-4 rounded-lg shadow-sm">
