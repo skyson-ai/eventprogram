@@ -5,18 +5,17 @@ import Image from "next/image";
 const WhoisMireille: React.FC = () => {
     return (
         <section className="bg-white p-0 md:p-16">
-            {/* Image pleine largeur */}
+            
             <div className="relative w-full h-96 md:h-[600px]">
                 <Image
-                    src="/Mireille.jpg" // Chemin vers la photo de Mireille
+                    src="/Mireille.jpg"
                     alt="Mireille Le Bouler"
-                    layout="fill" // L'image remplit toute la largeur
-                    objectFit="cover" // Maintient les proportions de l'image
+                    layout="fill" 
+                    objectFit="cover" 
                     className="rounded-none md:rounded-lg"
                 />
             </div>
 
-            {/* Texte en dessous avec contour stylisé */}
             <div className="relative z-10 -mt-8 md:-mt-12 mx-auto max-w-4xl p-6 md:p-12 bg-white border-4 border-yellow-500 rounded-lg shadow-lg">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center">Qui est Mireille Le Bouler ?</h2>
                 <p className="mt-4 text-lg text-gray-600 leading-relaxed text-center">

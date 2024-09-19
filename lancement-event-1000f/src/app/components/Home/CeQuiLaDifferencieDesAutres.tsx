@@ -6,7 +6,7 @@ const CeQuiLaDifferencieDesAutres = () => {
     <section className="bg-gradient-to-r from-yellow-200 to-gray-300 py-16 px-8">
       <div className="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:space-x-12">
         
-        {/* Texte à gauche */}
+      
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold text-yellow-500 mb-4 text-center md:text-left">Ce qui la différencie des autres</h2>
           <div className="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
@@ -22,7 +22,7 @@ const CeQuiLaDifferencieDesAutres = () => {
           </div>
         </div>
 
-        {/* Image à droite */}
+       
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
           <Image 
             src="/ceoPhoto.webp" 
