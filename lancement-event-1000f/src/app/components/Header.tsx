@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                 <Link href="/1000-femmes-proprietaires" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Événements
                 </Link>
-                <Link href="/contacter-la-coach" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMDll6g7iwVDMkRSbook0WsWAV6nBrRuusDWnllEftu0SN9Q/viewform?usp=sf_link" className="text-gray-800 hover:text-yellow-600 text-lg py-2 px-4 transition duration-300 rounded" onClick={closeMenu}>
                     Contact
                 </Link>
             </nav>
