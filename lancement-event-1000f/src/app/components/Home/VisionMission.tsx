@@ -38,7 +38,7 @@ const VisionMission = () => {
         
         <div className="lg:w-1/3 lg:ml-8 mt-8 lg:mt-0">
           <Image
-            src="/mireille.jpg" // 
+            src="/IMG5.jpg" // 
            width={400}
            height={600}
             alt="Marie Mireille Le Bouler"
