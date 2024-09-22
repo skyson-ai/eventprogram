@@ -63,7 +63,7 @@ const ParcoursProfessionnel = () => {
             {/* Chef d'entreprise */}
             <div>
               <h3 className="text-xl font-semibold text-yellow-500 mb-2">
-                Chef d'Entreprise, Sun & Beauty Institut <span className="text-gray-600">(Juillet 2007 - Février 2009)</span>
+                Chef d&apos;Entreprise, Sun &amp; Beauty Institut <span className="text-gray-600">(Juillet 2007 - Février 2009)</span>
               </h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
                 <li>Développement commercial et gestion des opérations.</li>
@@ -84,7 +84,7 @@ const ParcoursProfessionnel = () => {
           {/* Conclusion */}
           <div className="mt-8 bg-yellow-50 p-6 rounded-lg shadow-sm">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Honneur et transparence dans toutes les actions. Répondre aux besoins spécifiques des clients avec expertise et altruisme. Viser l'excellence dans le service et la gestion des investissements. Proposer des solutions novatrices pour surmonter les défis du marché.
+              Honneur et transparence dans toutes les actions. Répondre aux besoins spécifiques des clients avec expertise et altruisme. Viser l&apos;excellence dans le service et la gestion des investissements. Proposer des solutions novatrices pour surmonter les défis du marché.
             </p>
           </div>
         </div>

@@ -7,21 +7,21 @@ const temoignages = [
     id: 1,
     name: "John Doe",
     position: "CEO, ABC Corp",
-    text: "J'ai vraiment apprécié la formation. Le contenu était clair, pertinent, et directement applicable dans mes projets immobiliers. Je recommande vivement !",
+    text: "J&apos;ai vraiment apprécié la formation. Le contenu était clair, pertinent, et directement applicable dans mes projets immobiliers. Je recommande vivement !",
     image: "/Homme2.jpg",
   },
   {
     id: 2,
     name: "Jane Smith",
     position: "Investisseur Immobilier",
-    text: "Une approche personnalisée et une équipe qui connaît bien le marché. Grâce à leur expertise, j'ai pu investir en toute sérénité.",
+    text: "Une approche personnalisée et une équipe qui connaît bien le marché. Grâce à leur expertise, j&apos;ai pu investir en toute sérénité.",
     image: "/Homme1.jpg",
   },
   {
     id: 3,
     name: "Julie marie",
     position: "Entrepreneur",
-    text: "Des conseils avisés qui m'ont permis de diversifier mon portefeuille immobilier. Une formation de grande qualité.",
+    text: "Des conseils avisés qui m&apos;ont permis de diversifier mon portefeuille immobilier. Une formation de grande qualité.",
     image: "/femme.jpg",
   },
 ];
@@ -61,7 +61,7 @@ const TemoignagesSection = () => {
           {/* Témoignage texte */}
           <div className="w-full lg:w-2/3 lg:pl-8 text-center lg:text-left">
             <p className="text-lg text-gray-600 italic mb-6">
-              "{temoignages[currentIndex].text}"
+              &quot;{temoignages[currentIndex].text}&quot;
             </p>
             <h3 className="text-xl font-semibold text-gray-800">
               {temoignages[currentIndex].name}
