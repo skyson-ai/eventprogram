@@ -45,7 +45,7 @@ const ParcoursProfessionnel = () => {
                 Présidente Fondatrice, URIEL GROUP <span className="text-gray-600">(Janvier 2018 - Présent)</span>
               </h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                <li>Spécialisation dans le conseil et l'accompagnement personnalisé en immobilier.</li>
+                <li>Spécialisation dans le conseil et l&apos;accompagnement personnalisé en immobilier.</li>
                 <li>Développement de programmes de formation à travers Uriel Business Academy.</li>
               </ul>
             </div>
@@ -63,7 +63,7 @@ const ParcoursProfessionnel = () => {
             {/* Chef d'entreprise */}
             <div>
               <h3 className="text-xl font-semibold text-yellow-500 mb-2">
-                Chef d'entreprise, Sun &amp; Beauty Institut <span className="text-gray-600">(Juillet 2007 - Février 2009)</span>
+                Chef d&apos;Entreprise, Sun &amp; Beauty Institut <span className="text-gray-600">(Juillet 2007 - Février 2009)</span>
               </h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
                 <li>Développement commercial et gestion des opérations.</li>
@@ -73,7 +73,7 @@ const ParcoursProfessionnel = () => {
             {/* Personnel Navigant Commercial */}
             <div>
               <h3 className="text-xl font-semibold text-yellow-500 mb-2">
-                Personnel Navigant Commercial (PNC), CorsairFly <span className="text-gray-600">(Juin 1998 - Aujourd'hui)</span>
+              Personnel Navigant Commercial (PNC), CorsairFly <span className="text-gray-600">(Juin 1998 - Aujourd&apos;hui)</span>
               </h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
                 <li>Vente à bord, gestion de la trésorerie et fidélisation de la clientèle.</li>
