@@ -84,7 +84,7 @@ const ParcoursProfessionnel = () => {
           {/* Conclusion */}
           <div className="mt-8 bg-yellow-50 p-6 rounded-lg shadow-sm">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Honneur et transparence dans toutes les actions. Répondre aux besoins spécifiques des clients avec expertise et altruisme. Viser l'excellence dans le service et la gestion des investissements. Proposer des solutions novatrices pour surmonter les défis du marché.
+              Honneur et transparence dans toutes les actions. Répondre aux besoins spécifiques des clients avec expertise et altruisme. Viser l&apos;excellence dans le service et la gestion des investissements. Proposer des solutions novatrices pour surmonter les défis du marché.
             </p>
           </div>
         </div>
