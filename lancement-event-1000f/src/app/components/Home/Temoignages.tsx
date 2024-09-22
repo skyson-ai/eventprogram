@@ -9,14 +9,14 @@ const temoignages = [
     position: "CEO, ABC Corp",
     text: "Je suis vraiment satisfait de la formation. Le contenu était clair, pertinent, et directement applicable dans mes projets immobiliers. Je recommande vivement !",
 
-    image: "/Homme2.jpg",
+    image: "/femme.jpg",
   },
   {
     id: 2,
     name: "Jane Smith",
     position: "Investisseur Immobilier",
     text: "Une approche personnalisée et une équipe qui connaît bien le marché. Grâce à leur expertise, je peux investir en toute sérénité.",
-    image: "/Homme1.jpg",
+    image: "/femme.jpg",
   },
   {
     id: 3,
