@@ -1,10 +1,17 @@
-# Event Program
+<h1 align="center">Event Program</h1>
 
-An event management application for organizing and tracking events — originally built for the "1000 Femmes Propriétaires" program.
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
 
-## Overview
+<p align="center">
+  <em>An event management application — "1000 Femmes Propriétaires"</em>
+</p>
 
-A web application designed to manage event logistics, attendee registration, and program scheduling. Built to support community-driven initiatives and women entrepreneurship events.
+---
 
 ## Features
 
@@ -13,12 +20,6 @@ A web application designed to manage event logistics, attendee registration, and
 - Attendee registration
 - Responsive event pages
 - Multi-language support (FR/EN)
-
-## Tech Stack
-
-- **TypeScript** — Core language
-- **JavaScript** — Client-side logic
-- **HTML/CSS** — Templating & styling
 
 ## Getting Started
 
